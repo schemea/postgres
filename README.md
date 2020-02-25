@@ -1,4 +1,16 @@
-### POSTGRES SQL
+## POSTGRES SQL
+
+##### Start Postgres Database
+```bash
+sh start-postgres.sh
+```
+
+##### Start pgAdmin
+```bash
+sh start-pgadmin.sh
+```
+
+### Configuration
 
 ##### POSTGRES Variables
 ```bash
@@ -13,14 +25,4 @@ export POSTGRES_PORT=<PORT>
 export PGADMIN_EMAIL=<EMAIL>
 export PGADMIN_PASSWORD=<PASSWORD>
 export PGADMIN_PORT=<PORT>
-```
-
-##### Start Postgres Database
-```bash
-sh start-postgres.sh
-```
-
-##### Start pgAdmin
-```bash
-sh start-pgadmin.sh
 ```

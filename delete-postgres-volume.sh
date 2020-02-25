@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-docker volume rm simplon-postgres-volume
+. "$(dirname "$0")/scripts/variables.sh"
+
+docker volume rm "$POSTGRES_VOLUME"
