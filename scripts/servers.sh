@@ -18,4 +18,4 @@ mkdir -p "$WD/config"
   }
 }
 JSON
-) > "$WD/config/servers.json"
+) > "/pgadmin4/servers.json"
