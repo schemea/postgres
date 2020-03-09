@@ -2,7 +2,7 @@ version: "3.7"
 services:
   simplon-postgres:
     image: postgres
-    container_name: "simplon-postgres"
+    container_name: "${POSTGRES_DB}-postgres"
     volumes:
       - simplon-postgres-volume:/var/lib/postgresql/data
     env_file:
@@ -17,9 +17,7 @@ services:
       args:
         - POSTGRES_USER=${POSTGRES_USER}
         - POSTGRES_DB=${POSTGRES_DB}
-        - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
-        - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
-    container_name: "simplon-pgadmin"
+    container_name: "${POSTGRES_DB}-pgadmin"
     env_file:
       - .env
     ports:
